@@ -1,7 +1,14 @@
-Chisel Project
-
-Verilator command:
-`verilator --binary --timescale 1ns/1ps --trace --trace-structs -j 0 ../testbench/Testbench1.sv`
-
-Running Chisel/generating code:
-`sbt` then `run`
+# Project structure
+```
+build/
+    sv/               # SystemVerilog outputs generated from Chisel
+    vivado/           # Files generated from Vivado
+src/
+    main/scala/       # Chisel code
+    test/scala/       # Chisel tests
+synth/
+    build.tcl         # Vivado script for synthesis, device upload
+    constraints.xdc   # FPGA board file
+Makefile              # Task runner
+build.sbt             # Building Chisel code & tests
+```
