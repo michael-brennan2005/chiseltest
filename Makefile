@@ -7,7 +7,7 @@ SV_FILES  := $(GEN_DIR)/$(TOP).sv
 
 SBT       := sbt
 VERILATOR := verilator
-VIVADO    := vivado -mode batch -notrace
+VIVADO    := vivado -mode batch -notrace -tempDir ../build/vivado
 
 .PHONY: all chisel test verilate sim synth clean
 

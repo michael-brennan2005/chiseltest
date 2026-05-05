@@ -2,6 +2,8 @@
 test_run_dir/*
 build
 
+.metals/*
+
 ### XilinxISE template
 # intermediate build files
 *.bgn
