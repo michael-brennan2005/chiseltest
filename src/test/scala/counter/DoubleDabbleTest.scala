@@ -53,4 +53,8 @@ class DoubleDabbleTest extends AnyFunSuite with ChiselSim {
   test("Double dabble - convert 7890 works") {
     bcdTestCase(7890)
   }
+
+  test("Double dabble - convert 16 works") {
+    bcdTestCase(16)
+  }
 }
