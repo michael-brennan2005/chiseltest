@@ -5,7 +5,7 @@ import counter.DoubleDabble
 
 object Main extends App {
   ChiselStage.emitSystemVerilogFile(
-    new Top,
+    new Module,
     args = Array(
       "--target-dir",
       "./build/sv/"
